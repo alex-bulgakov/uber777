@@ -1,0 +1,9 @@
+* {
+  font-family: Roboto, sans-serif;
+}
+
+.fa-arrow-down {
+  color: red;
+  font-size: 40px;
+  padding: 10px;
+}
