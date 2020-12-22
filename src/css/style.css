@@ -57,7 +57,7 @@ nav {
 }
 
 .subheader .subheader_call {
-  margin-top: 22px;
+  margin-top: 19px;
   text-align: right;
   font-size: 12px;
   font-weight: 300;
@@ -88,4 +88,58 @@ nav {
   width: 4px;
   height: 4px;
   background-color: white;
+}
+
+.subheader .subheader_btn, .promo .promo_btn {
+
+  margin-top: 19px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-bottom: 3px solid #1c99b1;
+  background: linear-gradient(0deg, rgba(32,175,202,1) 0%, rgba(76,226,255,1) 100%);
+  border-radius: 3px;
+
+
+  min-height: 46px;
+  padding: 0 20px;
+}
+
+.subheader .subheader_btn:focus, .promo .promo_btn:focus {
+  outline: none;
+}
+
+.subheader .subheader_btn:active, .promo .promo_btn:active {
+
+  background: linear-gradient(180deg, rgba(32,175,202,1) 0%, rgba(76,226,255,1) 100%);
+}
+
+.promo {
+  min-height: 800px;
+  background: url("../img/bg_header.jpg"), center center/cover no-repeat;
+
+  text-align: center;
+  color: white;
+  padding: 67px;
+}
+
+.promo h1, h2 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.promo p {
+  margin-top: 25px;
+}
+
+.promo .prormo_header {
+  font-size: 60px;
+}
+
+
+.promo .prormo_subheader {
+  font-size: 36px;
 }
