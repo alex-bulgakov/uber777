@@ -146,12 +146,15 @@ header
   padding-top: 48px
   padding-bottom: 79px
   background: url("../img/bg_mobile.png") center (center / cover) no-repeat
+  .row
+    margin-top: 32px
   &_item
     position: relative
     width: 320px
     height: 280px
-    margin: 10px auto
-    padding-top: 89px
+    margin: 0 auto
+    margin-bottom: 19px
+    padding-top: 92px
     &_subtitle
       color: white
       text-align: center
@@ -161,6 +164,7 @@ header
       position: absolute
       bottom: 35px
       left: 50%
+      transform: translate(-50%)
       width: 25px
       height: 25px
       border-radius: 100%
@@ -168,6 +172,7 @@ header
       display: flex
       justify-content: center
       align-items: center
+      cursor: pointer
     &_1
       background: url("../img/mobile_item1.png") center (center / cover) no-repeat
     &_2
