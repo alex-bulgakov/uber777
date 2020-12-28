@@ -1,0 +1,15 @@
+@import vars
+
+@mixin btn
+  background: linear-gradient(0deg, rgba(32,175,202,1) 0%, rgba(76,226,255,1) 100%)
+  color: white
+  text-transform: uppercase
+  font-size: 14px
+  outline: none
+  border: none
+  border-bottom: 3px solid darken($accent_color, 10%)
+  border-radius: 3px
+
+@mixin btn_active
+  background: linear-gradient(180deg, rgba(32,175,202,1) 0%, rgba(76,226,255,1) 100%)
+  outline: none
