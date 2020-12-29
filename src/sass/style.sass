@@ -187,10 +187,17 @@ header
       justify-content: center
       align-items: center
       cursor: pointer
-      &::after
+      &:after
         content: "+"
         color: $accent_color
         font-size: 31px
+        transition: 0.2s
+      &:hover
+        background-color: #222
+        &:after
+          text-shadow: 0 0 30px rgba(255, 255, 255, 0.5)
+          color: lighten($accent_color, 10%, )
+
     &_1
       background: url("../img/mobile_item1.png") center (center / cover) no-repeat
     &_2
