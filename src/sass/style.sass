@@ -124,15 +124,29 @@ header
 
 .btn
   padding: 17px
+  transition: 0.2s
   @include btn
   &:active
     @include btn_active
   &:focus
     outline: none
+  &:hover
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5)
 
 .black_btn
   background-color: black
   color: white
+  text-transform: uppercase
+  font-size: 11px
+  text-align: center
+  height: 22px
+  padding: 5px 12px
+  width: 113px
+  margin: 0 auto
+
+.white_btn
+  background-color: #fff
+  color: black
   text-transform: uppercase
   font-size: 11px
   text-align: center
@@ -173,6 +187,10 @@ header
       justify-content: center
       align-items: center
       cursor: pointer
+      &::after
+        content: "+"
+        color: $accent_color
+        font-size: 31px
     &_1
       background: url("../img/mobile_item1.png") center (center / cover) no-repeat
     &_2
@@ -185,3 +203,39 @@ header
       background: url("../img/mobile_item5.png") center (center / cover) no-repeat
     &_6
       background: url("../img/mobile_item6.png") center (center / cover) no-repeat
+
+.choise
+  min-height: 896px
+  color: white
+  text-align: center
+  &_black
+    background-color: #070716
+    min-height: 496px
+    padding-top: 57px
+    position: relative
+  &_img
+    position: absolute
+    padding-top: 33px
+    bottom: 0
+    left: 50%
+    transform: translate(-50%, 50%)
+    border-radius: 100%
+    background-color: $accent_color
+    width: 532px
+    height: 532px
+    clip: rect(auto, auto, 266px, auto)
+    h2
+      font-size: 50px
+    p
+      text-transform: uppercase
+      color: $font_color
+  &_car
+    display: block
+    position: absolute
+    left: 50%
+    transform: translate(-50%, 50%)
+  &_white
+    padding-top: 219px
+    color: $font_color
+    background: url("../img/bg_choise.png")
+    min-height: 397px
