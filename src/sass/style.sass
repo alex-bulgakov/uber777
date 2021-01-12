@@ -295,7 +295,7 @@ header
   position: relative
   padding-top: 49px
   min-height: 717px
-  background:  #080810 url("../img/bg_world.png") center no-repeat
+  background: #080810 url("../img/bg_world.png") center no-repeat
   &_title
     font-size: 38px
     color: white
@@ -328,7 +328,20 @@ header
       justify-content: space-between
       align-items: center
     li
+      position: relative
+      background-color: black
+      width: 33px
+      height: 33px
       border-radius: 100%
+      a
+        display: block
+      i
+        &:before
+          position: absolute
+          top: 50%
+          left: 50%
+          transform: translate(-50%, -50%)
+          color: white
 
   &_menu
     padding-top: 50px
@@ -390,6 +403,7 @@ header
       align-items: center
       li
         position: relative
+        width: 94px
         &::before
           display: block
           content: ""
@@ -398,10 +412,10 @@ header
           position: absolute
           top: 50%
           transform: translate(3px, -50%)
-        width: 94px
+          width: 94px
         a
           display: block
-          padding: 4px 0 
+          padding: 4px 0
           color: white
           text-decoration: none
           background-color: black
@@ -412,13 +426,10 @@ header
           font-size: 9px
           &:nth-of-type(1)
             font-size: 5px
-            
+
 .apple-icon::before
-  background-image: url("../icons/icon_apple.png")
+  background: url("../icons/icon_apple.png") no-repeat left
 .google-icon::before
-  background-image: url("../icons/icon_google_play.png")
+  background: url("../icons/icon_google_play.png") no-repeat left
 .windows-icon::before
-  background-image: url("../icons/icon_windows_store.png")
-
-
-
+  background: url("../icons/icon_windows_store.png") no-repeat left
