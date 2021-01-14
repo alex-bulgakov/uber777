@@ -100,4 +100,9 @@ header .subheader_phone i::after{position:absolute;top:50%;display:inline-block;
 .menu_link{font-size:10px}
 .promo_header{font-size:50px}
 .reasons_item{-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;min-height:255px}
+.mobile_item{width:300px}
+.choise_header{font-size:30px}
+.footer_menu_1{font-size:13px}
+.footer_menu_2{font-size:9px}
+.footer_apps ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 }
