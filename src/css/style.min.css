@@ -106,3 +106,7 @@ header .subheader_phone i::after{position:absolute;top:50%;display:inline-block;
 .footer_menu_2{font-size:9px}
 .footer_apps ul{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-pack:distribute;justify-content:space-around;-webkit-box-align:end;-ms-flex-align:end;align-items:flex-end}
 }
+@media (max-width:991px){
+header nav .menu_item{padding-right:11px}
+.promo{padding-top:97px}
+}
