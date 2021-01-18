@@ -32,5 +32,48 @@
       .menu
         &_item
           padding-right: 11px
+    .subheader
+      &_logo
+        img
+          width: 100%
+      &_official
+        font-size: 11px
+      &_call
+        font-size: 13px
+      &_phone
+        font-size: 20px
+      &_btn
+        height: 40px
+        min-width: 100%
+        font-size: 12px
+
   .promo
     padding-top: 97px
+    min-height: 650px
+    &_header
+      font-size: 40px
+    &_subheader
+      font-size: 30px
+    &_btn
+      margin-top: 55px
+    
+  .reasons
+    &_item
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 60px
+      min-height: 380px
+      &_descr
+        padding: 0
+        margin-top: 30px
+
+@media (max-width: 767px)
+  header
+    nav
+      .menu
+        position: fixed
+        top: 0
+        right: 0
+        width: 50%
+        height: 100vh
