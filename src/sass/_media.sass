@@ -56,7 +56,7 @@
       font-size: 30px
     &_btn
       margin-top: 55px
-    
+
   .reasons
     &_item
       display: flex
@@ -73,7 +73,26 @@
     nav
       .menu
         position: fixed
+        flex-direction: column
+        justify-content: center
+        text-align: center
         top: 0
-        right: 0
+        left: -100%
         width: 50%
         height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0, 0.8)
+        z-index: 100
+        &_active
+          left: 0
+        &_item
+          width: 100%
+          border: none
+          padding-right: 0
+          margin: 10px 0
+        &_link
+          font-size: 20px
+
+  .choise
+    &_car
+      width: 100%
