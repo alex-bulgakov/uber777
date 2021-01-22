@@ -69,7 +69,23 @@
         margin-top: 30px
 
 @media (max-width: 767px)
+  .xs-hidden
+    display: none
+  .xs-visible
+    display: block !important
   header
+    .subheader
+      padding-top: 35px
+      &_phone
+        font-size: 16px
+        text-align: center
+      &_btn
+        display: block
+        min-width: 200px
+        margin: 0 auto
+        margin-bottom: 10px
+        &:focus
+          box-shadow: none
     nav
       .menu
         position: fixed
@@ -82,7 +98,7 @@
         height: 100vh
         padding: 20px 15px
         background-color: rgba(0,0,0, 0.8)
-        transition: 0.5s all
+        transition: 0.2s all
         z-index: 100
         &_active
           left: 0
@@ -95,7 +111,7 @@
           font-size: 20px
     .hamburger
       display: block
-      position: absolute
+      position: fixed
       right: 10px
       top: 10px
       width: 26px
@@ -105,18 +121,44 @@
         display: block
         height: 2px
         margin-bottom: 5px
-        background-color: #fff
+        background-color: #acacac
       &_active
         margin-top: 10px
         span
           margin-bottom: -2px
-          transition: 0.6s
+          transition: 0.2s
           &:nth-child(1)
             transform: rotate(-45deg)
           &:nth-child(2)
             display: none
           &:nth-child(3)
             transform: rotate(45deg)
+  .title
+    font-size: 30px
+  .promo
+    padding-top: 130px
+    &_header
+      font-size: 30px
+    &_descr
+      p
+        margin-top: 15px
+        text-align: justify
+        padding: 0 30px
+        line-height: 20px
+    &_btn
+      margin-top: 20px
+
+  .reasons
+    &_item
+      min-height: 100px
+
   .choise
     &_car
       width: 100%
+  footer
+    padding: 35px 0
+    .footer
+      &_apps
+        ul
+          flex-direction: row
+          margin-bottom: 10px

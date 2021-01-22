@@ -97,6 +97,7 @@ header .subheader_phone i::after{position:absolute;top:50%;display:inline-block;
 .apple-icon::before{background:url(../icons/icon_apple.png) no-repeat left}
 .google-icon::before{background:url(../icons/icon_google_play.png) no-repeat left}
 .windows-icon::before{background:url(../icons/icon_windows_store.png) no-repeat left}
+.xs-visible{display:none!important}
 @media (max-width:1200px){
 .menu_link{font-size:10px}
 .promo_header{font-size:50px}
@@ -122,16 +123,30 @@ header .subheader_btn{height:40px;min-width:100%;font-size:12px}
 .reasons_item_descr{padding:0;margin-top:30px}
 }
 @media (max-width:767px){
-header nav .menu{position:fixed;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;top:0;left:-100%;width:50%;height:100vh;padding:20px 15px;background-color:rgba(0,0,0,.8);-webkit-transition:.5s all;transition:.5s all;z-index:100}
+.xs-hidden{display:none}
+.xs-visible{display:block!important}
+header .subheader{padding-top:35px}
+header .subheader_phone{font-size:16px;text-align:center}
+header .subheader_btn{display:block;min-width:200px;margin:0 auto;margin-bottom:10px}
+header .subheader_btn:focus{-webkit-box-shadow:none;box-shadow:none}
+header nav .menu{position:fixed;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center;top:0;left:-100%;width:50%;height:100vh;padding:20px 15px;background-color:rgba(0,0,0,.8);-webkit-transition:.2s all;transition:.2s all;z-index:100}
 header nav .menu_active{left:0}
 header nav .menu_item{width:100%;border:none;padding-right:0;margin:10px 0}
 header nav .menu_link{font-size:20px}
-header .hamburger{display:block;position:absolute;right:10px;top:10px;width:26px;height:21px;z-index:100}
-header .hamburger span{display:block;height:2px;margin-bottom:5px;background-color:#fff}
+header .hamburger{display:block;position:fixed;right:10px;top:10px;width:26px;height:21px;z-index:100}
+header .hamburger span{display:block;height:2px;margin-bottom:5px;background-color:#acacac}
 header .hamburger_active{margin-top:10px}
-header .hamburger_active span{margin-bottom:-2px;-webkit-transition:.6s;transition:.6s}
+header .hamburger_active span{margin-bottom:-2px;-webkit-transition:.2s;transition:.2s}
 header .hamburger_active span:nth-child(1){-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
 header .hamburger_active span:nth-child(2){display:none}
 header .hamburger_active span:nth-child(3){-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.title{font-size:30px}
+.promo{padding-top:130px}
+.promo_header{font-size:30px}
+.promo_descr p{margin-top:15px;text-align:justify;padding:0 30px;line-height:20px}
+.promo_btn{margin-top:20px}
+.reasons_item{min-height:100px}
 .choise_car{width:100%}
+footer{padding:35px 0}
+footer .footer_apps ul{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;margin-bottom:10px}
 }
